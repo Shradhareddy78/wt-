@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Recipe Generator</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      background-image: url('wt2.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #recipe {
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for recipe content */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .floating-image {
+      position: fixed;
+      bottom: 20px; /* Adjust as needed */
+      right: 20px; /* Adjust as needed */
+      z-index: 9999; /* Ensure it appears on top of other content */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center mt-5 mb-4">Login Successful<br>Online Recipe Generator</h1>
+  <form id="recipeForm" action="endpage for onlinerecipie.html">
+    <div class="form-group">
+      <label for="recipeName">Recipe Name:</label>
+      <input type="text" class="form-control" id="recipeName" name="recipeName" required>
+    </div>
+    <div class="form-group">
+      <label for="cuisine">Cuisine:</label>
+      <select class="form-control" id="cuisine" name="cuisine" required>
+        <option value="">Select Cuisine</option>
+        <option value="Italian">Italian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Chinese">Chinese</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="ingredients">Ingredients:</label>
+      <textarea class="form-control" id="ingredients" name="ingredients" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="instructions">Instructions:</label>
+      <textarea class="form-control" id="instructions" name="instructions" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Generate Recipe</button>
+  </form>
+
+  <div id="recipe"></div>
+</div>
+</body>
+</html>
