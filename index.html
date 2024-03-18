@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Recipe Book</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lemonchiffon;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .floating-image {
+      width: 100%;
+      max-width: 500px;
+      position: absolute;
+      
+      margin-bottom: 20px;
+      right: 32%;
+      
+      transform: translate(-50%, -50%);
+      animation: floatUpDown 2s ease-in-out infinite alternate;
+      
+      
+    }
+    .btn-group {
+      margin-top: 20px;
+    }
+    
+
+    @keyframes floatUpDown {
+      0% {
+        transform: translateY(-10%);
+      }
+      100% {
+        transform: translateY(10%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to Our Online Recipe Book!</h1><br><br><br>
+  <img  src="wt3.jpg" class="floating-image"  alt="Intro Image">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="btn-group" role="group" aria-label="Options">
+    <a href="website.html" class="btn btn-primary btn-lg" role="button">Explore Online Recipes</a>
+    <a href="singup form for online classes.html" class="btn btn-secondary btn-lg" role="button">Join Online Classes</a>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
